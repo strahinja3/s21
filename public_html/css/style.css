@@ -1,0 +1,208 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Dec 7, 2021, 3:11:44 PM
+    Author     : frontend
+*/
+
+img{
+    max-width: 100%;
+}
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    color:#81868E;
+    position: relative;
+    background-color: #f3f3f3;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #333B46;
+}
+
+a{
+    text-decoration: none;
+    color:#81868E;
+}
+.section-title{
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.section-title:after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #898989;
+    margin-top: 20px;
+}
+
+.section-title.text-center:after{
+    margin-inline: auto; 
+}
+
+.btn-danger, 
+.bg-danger{
+    background-color: #E84C3D;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/*HEDER*/
+
+
+header{
+    background-color: rgba(225,225,225, 0.5);
+}
+
+header .navbar-brand img{
+    height: auto !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-toggler span{
+    width: 35px;
+    height: 3px;
+    background-color: #E84C3D;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.navbar-toggler span:last-of-type{
+    margin-bottom: 0;
+}
+
+.navbar-light .navbar-nav a.nav-link{
+    border-bottom: 1px solid #E84C3D;
+    text-transform: uppercase;
+    color: #333B46;
+    transition: 0.4s linear;
+}
+
+.navbar-light .navbar-nav a.nav-link.active,
+.navbar-light .navbar-nav a.nav-link:hover{
+    background-color: #E84C3D;
+    color:#fff;
+}
+
+.home{
+    
+    background-size: cover;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+   
+}
+
+.home .container{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.home .home-content{
+    background-color: rgba(225, 225, 225, 0.5);
+    padding: 20px;
+}
+
+.home .mouse{
+    position: absolute;
+    left: 50%;
+    bottom: 54px;
+    transform: translateX(-50%);
+}
+
+.home .mouse .fas{
+    font-size: 30px;
+}
+
+.about, .service{
+    margin-bottom: 40px;
+}
+
+.service .container > p{
+    max-width: 540px;
+    margin-inline:auto; 
+    margin-bottom: 30px;
+}
+
+.service .service-item{
+    border: 3px solid #ebebeb;
+    border-radius: 10px;
+    transition: 0.3s linear;
+}
+
+.service .service-item .service-item-icon span{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    background-color: #E84C3D;
+    color:#fff;
+    font-size: 50px;
+    transition: 0.3s linear;
+}
+
+.service .service-item .section-title{
+    font-size: 16px;
+    transition: 0.3s linear;
+}
+.service .service-item .section-title:after{
+    width: 31px;
+    margin-inline: auto;
+    margin-bottom: 20px;
+    transition: 0.3s linear;
+}
+
+.service .service-item:hover{
+    background-color: #E84C3D;
+    color: #fff;
+}
+
+.service .service-item:hover .section-title{
+    color:#fff;
+}
+
+.service .service-item:hover .section-title:after{
+    background-color:#fff;
+}
+.service .service-item:hover .service-item-icon span{
+    color:#E84C3D;
+    background-color: #fff;
+}
+
+.portfolio{
+    padding: 120px 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+}
+
+.portfolio .portfolio-item .section-title:after{
+    background-color: #fff;
+}
+
