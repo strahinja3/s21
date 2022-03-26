@@ -138,7 +138,7 @@ header .navbar-brand img{
     font-size: 30px;
 }
 
-.about, .service{
+.about, .service, .subscribe{
     margin-bottom: 40px;
 }
 
@@ -200,9 +200,192 @@ header .navbar-brand img{
     background-repeat: no-repeat;
     background-position: center center;
     color: #fff;
+    margin-bottom: 40px;
 }
 
 .portfolio .portfolio-item .section-title:after{
     background-color: #fff;
 }
 
+.team{
+    margin-bottom: 50px;
+}
+.team .section-description,
+.contact .section-description{
+    max-width: 540px;
+    margin-inline: auto;
+    margin-bottom: 40px;
+}
+
+/**/
+
+
+.team .team-member{
+    max-width: 350px;
+    margin-inline: auto
+}
+
+.team .team-member .ratio-3by5:before{
+    padding-top: 130%;
+    background: #ccc;
+}
+
+.team-member .team-member-info{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: #E84C3D;
+    color:#fff;
+    top: auto;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    transform: translateY(150%);
+    transition: 0.3s linear;
+}
+
+.team-member .ratio{
+    overflow: hidden;
+}
+
+.team-member img{
+    filter: grayscale(100%);
+}
+.team-member:hover img{
+    filter: none;
+}
+.team-member:hover .team-member-info{
+   transform: translateY(0%);
+}
+
+.team-member .team-member-info p{
+    display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+.team-member .team-member-info .social a{
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    border: 2px solid #fff;
+    font-size: 20px;
+    color:#fff;
+    border-radius: 50%;
+    margin-inline: 3px;
+}
+
+.team .team-member .team-member-title a{
+    display: block;
+    font-size: 17px;
+    line-height: 24px;
+    color:#333B46;
+    text-transform: uppercase;
+}
+
+.team .team-member .team-member-position{
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color:#333B46;
+}
+
+.subscribe{
+    padding: 100px 0;
+    color: #fff;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.subscribe .section-title{
+    color:#fff;
+}
+
+.subscribe .section-title:after{
+    background-color: #fff;
+}
+
+.subscribe .subscribe-content p{
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.subscribe .subscribe-form .form-control{
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 0;
+    color:#fff;
+    line-height: 27px;
+}
+.subscribe .subscribe-form .form-control::placeholder{
+    color:#fff;
+    opacity: 1;
+}
+
+
+.subscribe .subscribe-form .btn{
+    border: 1px solid #fff;
+    color:#fff;
+    border-radius: 0;
+    font-size: 14px;
+}
+
+main{
+    padding-bottom: 80px;
+}
+
+.contact .contact-wrapper{
+    max-width: 905px;
+    margin-inline: auto;
+}
+
+.contact .contact-form .form-control{
+    border: 3px solid #ebebeb;
+    line-height: 31px;
+    background: transparent;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.contact .contact-form textarea{
+    resize: none;
+}
+
+.contact .contact-data p a{
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact .contact-data .contact-data-icon{
+    flex: 0 0 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    color:#E84C3D;
+    position: relative;
+    top: 6px;
+}
+
+.contact .contact-data .contact-data-text{
+    flex: 0 0 calc(100% - 40px);
+    padding-left: 15px;
+    width: calc(100% - 40px);
+    color: #81868E;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.6px;
+}
+
+footer{
+    padding: 33px 0 35px;
+}
+
+footer .copyright{
+    font-size: 15px;
+    line-height: 21px;
+    text-transform: capitalize;
+}

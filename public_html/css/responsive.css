@@ -13,11 +13,12 @@
     /*MD Breakpoint*/
 
 
-    .home{
-        margin-bottom: 60px;
-    }
+    
 
-    .about{
+    .home, 
+    .about,
+    .portfolio,
+    .subscribe{
         margin-bottom: 60px;
     }
     
@@ -28,6 +29,9 @@
     
     font-size: 40px;
 
+}
+.team .section-description{ 
+    margin-bottom: 60px;
 }
 
 }
@@ -49,7 +53,9 @@
 
 
     .about,
-    .service{
+    .service,
+    .portfolio, 
+    .subscribe{
         margin-bottom: 90px;
     }
 
@@ -64,6 +70,16 @@
     font-size: 50px;
 }
 
+
+.team .section-description,
+.contact .section-description{ 
+    margin-bottom: 80px;
+}
+
+
+main{
+    padding-bottom: 84px;
+}
 
 }
 
@@ -83,7 +99,14 @@
     .about{
         margin-bottom: 128px;
     }
+    
+    .portfolio{
+        margin-bottom: 100px;
+    }
 
+    .subscribe{
+        margin-bottom: 140px;
+    }
 }
 
 
